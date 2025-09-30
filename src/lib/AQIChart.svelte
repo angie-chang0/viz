@@ -13,7 +13,7 @@
 	}
 
 	// properties this component accepts
-	const { data }: {data: Item[]} = $props();
+	const { data }: { data: Item[] } = $props();
 
 	// just for debugging; can be removed
 	$inspect(data);
