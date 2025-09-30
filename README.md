@@ -1,5 +1,7 @@
 # Svelte + D3 Starter Template
 
+A starter template for the third assignment in the data visualization course at CMU. This template separated the AQI chart into a component and moves the data loading to the main page. This separation of concerns will help you simplify your code.
+
 ## Live Demo
 
 The project is automatically deployed to GitHub Pages on every push to main.
