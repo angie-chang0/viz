@@ -33,7 +33,7 @@
 	let chartHeight = $state(600);
 	let chartMargins = $state({ top: 20, right: 30, bottom: 40, left: 60 });
 
-	const { data, showRawData = false }: { data: Item[]; showRawData?: boolean } = $props();
+	const { data, showRawData = false }: {data: Item[]; showRawData?:boolean } = $props();
 
 	let processedData = $derived(
 		(() => {
@@ -93,8 +93,8 @@
 	let xAxisGenerator = $derived(d3.axisBottom(timeScale));
 	let yAxisGenerator = $derived(d3.axisLeft(aqiScale));
 
-	let xAxisRef: SVGGElement;
-	let yAxisRef: SVGGElement;
+	let xAxisRef:SVGGElement;
+	let yAxisRef:SVGGElement;
 
 	$effect(() => {
 		if (xAxisRef && data.length > 0) {
@@ -161,9 +161,9 @@
 		font-family: sans-serif;
 		font-size: 12px;
 	}
-
+/* erm */
 	.chart-container {
 		display: flex;
-		justify-content: center;
+
 	}
 </style>
